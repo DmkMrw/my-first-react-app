@@ -16,14 +16,10 @@ const ColumnForm = (props) => {
           setIcon('')
      }
 
-     const TextInput = (props) => {
-          return <input className={style.input} value={props.value} onChange={props.onChange} placeholder={props.placeholder} type="text" />
-     };
-
      return (
-          <form onSubmit={handleSubmit}>
-               Title: <TextInput value={title} onChange={e => setTitle(e.target.value)} />
-               Icon: <TextInput value={icon} onChange={e => setIcon(e.target.value)} />
+          <form onSubmit={handleSubmit} className={style.columnForm}>
+               <span className={style.inputName}>Title:</span><TextInput value={title} onChange={e => setTitle(e.target.value)} />
+               <span className={style.inputName}>Icon:</span><TextInput value={icon} onChange={e => setIcon(e.target.value)} />
                <Button>Add column</Button>
           </form>
      );
