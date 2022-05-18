@@ -58,7 +58,7 @@ import ColumnForm from '../ColumnForm/ColumnForm';
                </header>
                <p className={style.description}>Interesting things I want to check out</p>
                <section className={style.columns}>
-                    {columns.map(column => <Column key={column.id} id={column.id} title={column.title} icon={column.icon} cards={column.cards} />)}
+                    {columns.map(column => <Column key={column.id} id={column.id} title={column.title} icon={column.icon} cards={column.cards} addCard={addCard}/>)}
                </section>
                <ColumnForm action={addColumn} />
           </div>
