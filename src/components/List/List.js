@@ -3,11 +3,14 @@ import { useSelector } from 'react-redux';
 import Column from '../Column/Column';
 import ColumnForm from '../ColumnForm/ColumnForm';
 import { getAllColumns } from '../../redux/store';
+import { getListById } from '../../redux/store';
 
 const List = () => {
 
      const columns = useSelector(getAllColumns);
+     const listData = useSelector(getListById);
 
+     console.log('listData', listData);
      return (
           <div className={style.list}>
                <header className={style.header}>
