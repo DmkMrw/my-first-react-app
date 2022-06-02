@@ -1,14 +1,13 @@
 import style from './Favorite.module.scss'
-import NavBar from "../NavBar/NavBar";
+import PageTitle from '../PageTitle/PageTitle';
 
 const Favorite = () => {
      return (
           <>
-               <NavBar />
-               <h2 className={style.title}>Favorite</h2>
+               <PageTitle>Favorite</PageTitle>
                <p>Lorem ipsum</p>
           </>
-      );
+     );
 }
 
 export default Favorite;

@@ -1,11 +1,12 @@
-import NavBar from "../components/NavBar/NavBar";
 import style from './About.module.scss';
+import PageTitle from '../PageTitle/PageTitle';
+
 
 const About = () => {
      return (
           <>
-               <NavBar />
-               <h2 className={style.title}>About</h2>
+               <PageTitle>About</PageTitle>
+               <p>Lorem Ipsum</p>
           </>
      );
 }
