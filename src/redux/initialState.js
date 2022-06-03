@@ -18,6 +18,11 @@ const initialState = {
       icon: 'gamepad',
       listId: 1,
     },
+    { id: 4,
+      title: 'Songs',
+      icon: 'music',
+      listId: 2,
+    },
     {}
   ],
 
