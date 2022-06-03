@@ -11,7 +11,7 @@ const SearchForm = () => {
   const currentSearchString = useSelector(searchInputValue)
   const [searchValue, setSearchValue] = useState(currentSearchString);
 
-  console.log('currentSearchString', currentSearchString);
+  // console.log('currentSearchString', currentSearchString);
 
   const dispatch = useDispatch();
 
