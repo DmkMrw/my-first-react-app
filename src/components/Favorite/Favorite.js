@@ -3,9 +3,17 @@ import PageTitle from '../PageTitle/PageTitle';
 import Card from '../Card/Card';
 import { getFavoriteCard } from '../../redux/store';
 import { useSelector } from 'react-redux';
+import { Navigate } from 'react-router-dom';
+import BlankPage from '../BlankPage/BlankPage';
+// import PageTitle from '../PageTitle/PageTitle';
+
 
 const Favorite = () => {
      const favoriteCards = useSelector(getFavoriteCard);
+
+     if (favoriteCards.length === 0) {
+          return <PageTitle>No cards</PageTitle>
+     }
 
      return (
           <>
