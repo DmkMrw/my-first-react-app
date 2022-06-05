@@ -3,9 +3,6 @@ import PageTitle from '../PageTitle/PageTitle';
 import Card from '../Card/Card';
 import { getFavoriteCard } from '../../redux/store';
 import { useSelector } from 'react-redux';
-import { Navigate } from 'react-router-dom';
-import BlankPage from '../BlankPage/BlankPage';
-// import PageTitle from '../PageTitle/PageTitle';
 
 
 const Favorite = () => {
